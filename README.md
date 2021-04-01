@@ -74,8 +74,7 @@ par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
 with(data1, {
   plot(Global_active_power~Datetime, type="l", 
        ylab="Global Active Power (kilowatts)", xlab="")
-  plot(Voltage~Datetime, type="l", 
-       ylab="Voltage (volt)", xlab="")
+  plot(Voltage~Datetime, type="l", ylab="Voltage (volt)", xlab="")
   plot(Sub_metering_1~Datetime, type="l", 
        ylab="Global Active Power (kilowatts)", xlab="")
   lines(Sub_metering_2~Datetime,col='Red')
