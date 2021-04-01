@@ -3,7 +3,7 @@
 
 Find below the codes:
 
-For plot 1:
+# Plot 1 code:
 
 setwd("C:/Users/Pranav Narula/Desktop/Exploratory data analysis Coursera")
 
@@ -19,7 +19,7 @@ dev.off()
 
      
      
- For plot 2:
+# Plot 2 code :
  
  setwd("C:/Users/Pranav Narula/Desktop/Exploratory data analysis Coursera")
 
@@ -29,7 +29,7 @@ data1$Date <- as.Date(data1$Date, format="%d/%m/%Y")
 datetime <- paste(as.Date(data1$Date), data1$Time)
 data1$Datetime <- as.POSIXct(datetime)
 
-## Plot 2
+
 with(data1, {
   plot(Global_active_power~Datetime, type="l",
      ylab="Global Active Power (kilowatts)", xlab="")
@@ -37,7 +37,7 @@ with(data1, {
   
   
  
- For plot 3
+# Plot 3 code :
  
  setwd("C:/Users/Pranav Narula/Desktop/Exploratory data analysis Coursera")
 
@@ -59,8 +59,8 @@ legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2,
        
 
 
+# Plot 4 code :
 
-For plot 4:
 setwd("C:/Users/Pranav Narula/Desktop/Exploratory data analysis Coursera")
 
 data_full <- read.csv("household_power_consumption.txt", header=T, sep=';', na.strings="?", 
